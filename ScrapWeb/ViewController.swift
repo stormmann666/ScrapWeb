@@ -8,22 +8,44 @@
 
 import UIKit
 import WebKit
+import  SwiftSoup
 
 class ViewController: UIViewController {
     
     @IBOutlet weak var emailTF : UITextField!
     @IBOutlet weak var passwordTF : UITextField!
+    @IBOutlet weak var webView : WKWebView!
+    @IBOutlet weak var urlTF : UITextField!
     
     
-    let webView =  WKWebView()
+    
+    //let webView =  WKWebView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+      
+        
+        
+        
+        let url = URL(string: "https://www.google.com")
+        
+        let request = URLRequest(url: url!)
+        
+        self.webView.load(request)
+        
+        let f = 90
     }
     
     @IBAction func onSignIn() {
         
+        
+        
+        
+    }
+    
+    
+    @IBAction func onSeeString() {
         
         
         

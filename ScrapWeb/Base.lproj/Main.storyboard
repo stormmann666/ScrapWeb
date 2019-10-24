@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="email" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" background="usuario" translatesAutoresizingMaskIntoConstraints="NO" id="AIo-Bk-4aM">
-                                <rect key="frame" x="69" y="158" width="263" height="34"/>
+                                <rect key="frame" x="69" y="185" width="263" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -28,7 +28,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UDZ-qp-4Th">
-                                <rect key="frame" x="129" y="339" width="115" height="52"/>
+                                <rect key="frame" x="69" y="339" width="115" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Sig in"/>
                                 <connections>
@@ -44,6 +44,20 @@
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="https://www.elmundo.es" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CZf-8I-Xfh">
+                                <rect key="frame" x="69" y="102" width="263" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wrx-OH-7UT">
+                                <rect key="frame" x="239" y="339" width="103" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="see strings"/>
+                                <connections>
+                                    <action selector="onSeeString" destination="BYZ-38-t0r" eventType="touchUpInside" id="AV8-yA-ODf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -51,6 +65,8 @@
                     <connections>
                         <outlet property="emailTF" destination="AIo-Bk-4aM" id="Zww-us-zn4"/>
                         <outlet property="passwordTF" destination="DQA-S5-9Oz" id="Rq9-4q-UOF"/>
+                        <outlet property="urlTF" destination="CZf-8I-Xfh" id="sBs-XU-Y6I"/>
+                        <outlet property="webView" destination="1Ab-xa-RUi" id="dHG-s7-eTA"/>
                         <segue destination="TWv-lO-FKE" kind="show" identifier="showEmails" id="PKS-n9-4AK"/>
                     </connections>
                 </viewController>
